@@ -20,4 +20,4 @@ In order to make an integrative project, it will consist of serverals projects, 
 3. **GPLBankServidor** is a Maven Web Server NetBeans Project. It uses J2EE.
 4. **GPLBankAndroid** is the client for mobile devices. It has been developed using AndroidStudio.
 
-For further information you can check the wiki.
+For further information you can check the [wiki](https://github.com/jm-jimenez/gplbank/wiki).
