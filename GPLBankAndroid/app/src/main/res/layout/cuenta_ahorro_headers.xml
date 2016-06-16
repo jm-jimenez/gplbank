@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_iban"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="IBAN"/>
+
+    <TextView
+        style="@style/separador" />
+
+    <TextView
+        android:id="@+id/tv_saldo"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="SALDO"/>
+
+    <TextView
+        style="@style/separador"/>
+
+    <TextView
+        android:id="@+id/tv_remuneracion"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="REMUNERACION"/>
+
+</LinearLayout>
