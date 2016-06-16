@@ -31,8 +31,8 @@ gulp.task("less", function(){
 
 gulp.task("js", function(){
 	gulp.src("./js/*.js")
-	.pipe(concat("app.js"))
-	//.pipe(uglify())
+	.pipe(concat("app.min.js"))
+	.pipe(uglify())
 	.pipe(gulp.dest("./dist/js"));
 });
 
