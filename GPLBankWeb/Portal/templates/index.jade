@@ -1,0 +1,58 @@
+html
+	head
+		meta(charset="UTF-8")
+		script(src='js/jquery-1.12.3.min.js')
+		script(src='js/bootstrap.min.js')
+		script(src="js/app.js")
+		link(rel='stylesheet', href='css/app.min.css')
+		link(rel='stylesheet', href='css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/bootstrap-theme.min.css')
+	body
+		img#imageheader.img-responsive.fade-in(src="resources/images/gplbank-logo.png")
+
+		nav.navbar.navbar-default
+			div.container-fluid
+				div.navbar-header
+					button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					.navbar-brand.swipe-from-left#brand GPLBank
+
+				div.collapse.navbar-collapse#bs-example-navbar-collapse-1
+					ul.nav.navbar-nav
+						li.swipe-from-left#home-btn
+							a(href="#" onclick="loadPage('home')") Home
+								span.sr-only (current)
+						li.dropdown.swipe-from-left#dropdown-btn
+							a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="flase") Productos #[span.caret]
+							ul.dropdown-menu
+								li
+									a(href="#" onclick="loadPage('cuenta-nomina')") Cuenta nómina
+								li
+									a(href="#" onclick="loadPage('cuenta-ahorro')") Cuenta ahorro
+								li.divider(role ="separator")
+								li
+									a(href="#" onclick="loadPage('tarjetas')") Tarjetas
+		div.container-fluid#contenido-home.fade-in
+			div#myCarousel.carousel.slide(data-ride="carousel")
+				ol.carousel-indicators
+					li.active(data-target="#myCarousel" data-slide-to="0")
+					li(data-target="#myCarousel" data-slide-to="1")
+					li(data-target="#myCarousel" data-slide-to="2")
+				div.carousel-inner(role="listbox")
+					div.item.active
+						img.img-responsive.center-image(src="resources/images/img-cuentanomina.jpg")
+					div.item
+						img.img-responsive.center-image(src="resources/images/img-ahorro.jpg")
+					div.item
+						img.img-responsive.center-image(src="resources/images/img-tarjetas.jpg")
+				a.left.carousel-control(href="#myCarousel" role="button" data-slide="prev")
+					span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+					span.sr-only Previous
+				a.right.carousel-control(href="#myCarousel" role="button" data-slide="next")
+					span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+					span.sr-only Next
+		div.container-fluid#next-page
+

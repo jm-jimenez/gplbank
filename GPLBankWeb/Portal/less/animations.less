@@ -1,0 +1,44 @@
+@keyframes fade-in{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+@keyframes fade-in-end{
+	from{opacity: 1}
+	to{opacity: 0}
+}
+
+.fade-in{
+	opacity: 0;
+}
+
+.fade-in.animate{
+	animation : fade-in 3s 1 ease-out;
+	opacity: 1;
+}
+
+.fade-in.end{
+	opacity: 0;
+	animation : fade-in-end 2s 1;
+}
+
+
+@keyframes swipe-from-left{
+	0%{opacity: 0; transform : translate3d(-200%, 0 ,0)}
+	10%{opacity: 1}
+	100%{transform : translate3d(0, 0,0)}
+}
+
+.swipe-from-left{
+	transform : translate3d(-200%, 0, 0);
+	opacity: 0;
+}
+
+.swipe-from-left.animate{
+	animation : swipe-from-left 1.7s 1 ease-out;
+	opacity: 1;
+	transform : translate3d(0, 0,0);
+}
+
+
+
